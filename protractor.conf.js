@@ -1,6 +1,7 @@
 exports.config = {
   // Set directConnect to true to use Chrome's or Firefox's webdriver,
   // instead of selenium server.
+  // When directConnect is true the seleniumAddress configuration is skipped.
   directConnect: true,
 
   // The address of a running selenium server.
