@@ -1,5 +1,6 @@
 var ProtractorMenuPage = function() {
 
+  // Declare all the page object public elements in the constructor.
   this.quickStartMenuLink = element(by.id('drop1'));
   this.tutorialLinkFromQuickStart = element.all(by.css('.dropdown.open ul li a')).first();
 
