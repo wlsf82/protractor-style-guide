@@ -20,4 +20,5 @@ var ChokoPage = function() {
 
 };
 
+// Use a single module.exports at the end of the page object file
 module.exports = ChokoPage;
