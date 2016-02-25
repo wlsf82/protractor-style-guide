@@ -28,12 +28,4 @@ describe('a test to examplify the Protractor\'s style guide', function() {
     expect(apiPage.apiSearchedTitle.getText()).toContain('by.repeater');
   });
 
-  it('search for "clone"', function() {
-    // Act:
-    apiPage.searchAndClickOnFirstLink('clone')
-
-    // Assert:
-    expect(apiPage.apiSearchedTitle.getText()).toContain('element.all(locator).clone');
-  });
-
 });

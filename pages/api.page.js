@@ -14,14 +14,6 @@ var APIPage = function() {
   // Prefer by.id and by.css when no Protractor locators are available
   this.apiSearchedTitle = element(by.css('.api-title'));
 
-  // The below function does not respect the unique responsability principle, but this is just an example.
-  // The below function code is an example of the following Protractor's style guide rule:
-  // Declare page object functions for operations that require more than one step.
-  this.searchAndClickOnFirstLink = function(termToSearch) {
-    this.searchField.sendKeys(termToSearch);
-    this.firstSidebarLink.click();
-  };
-
 };
 
 // The below line of code is an example of the following Protractor's style guide rule:
