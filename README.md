@@ -6,5 +6,4 @@ How to run the tests:
 ./node_modules/.bin/protractor protractor.conf.js
 
 The complete style guide can be found here:
-
 http://angular.github.io/protractor/#/style-guide
