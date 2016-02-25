@@ -7,6 +7,7 @@ To install the project, run the below command into the root's project directory:
 To run the tests:
 
 1. Open a new terminal and run Protractor:
+
 `./node_modules/.bin/protractor protractor.conf.js`
 
 The complete style guide can be found here:
