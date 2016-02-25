@@ -19,4 +19,12 @@ describe('Choko login', function() {
     expect(chokoPage.errorMessage.isDisplayed()).toBe(true);
   });
 
+  it('try to login with empty fields', function() {
+    // Act:
+    chokoPage.login('', '');
+
+    // Assert:
+    expect(chokoPage.errorMessage.isDisplayed()).toBe(true);
+  });
+
 });
