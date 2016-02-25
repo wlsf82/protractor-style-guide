@@ -12,6 +12,10 @@ exports.config = {
     'spec/*_spec.js'
   ],
 
+  suites: {
+    smoke: 'spec/smoke_test_spec.js'
+  },
+
   capabilities: {
     'browserName': 'chrome',
     'chromeOptions': {'args': ['--disable-extensions']}
