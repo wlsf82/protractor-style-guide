@@ -1,3 +1,5 @@
+var SpecReporter = require('jasmine-spec-reporter');
+
 exports.config = {
   // Set directConnect to true to use Chrome's or Firefox's webdriver,
   // instead of selenium server.
@@ -35,6 +37,14 @@ exports.config = {
 
   // Define things that will happen before start testing.
   onPrepare: function() {
+    // Add jasmine spec reporter
+    jasmine.getEnv().addReporter(new SpecReporter({
+      displayFailuresSummary: true,
+      displayFailedSpec: true,
+      displaySuiteNumber: true,
+      displaySpecDuration: true
+    }));
+
     browser.driver.manage().window().maximize();
   }
 };
