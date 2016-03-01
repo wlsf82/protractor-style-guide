@@ -6,7 +6,7 @@ var ProtractorMenuPage = require('../pages/protractor_menu.page');
 
 // The below tests are an example of the following Protractor's style guide rule:
 // Have a suite that navigates through the major routes of the app
-describe('Protractor smoke test', function() {
+describe('Official Protractor page - smoke test suite', function() {
 
   // The below line of code is an example of the following Protractor's style guide rule:
   // Instantiate all page objects at the beginning of the test suite
