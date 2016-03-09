@@ -22,7 +22,7 @@ exports.config = {
     'browserName': 'chrome',
     'chromeOptions': {'args': ['--disable-extensions']},
     shardTestFiles: true,
-    maxInstances: 2
+    maxInstances: 3
   },
 
   // A base URL for your application under test. Calls to protractor.get()
