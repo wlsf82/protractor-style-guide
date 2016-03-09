@@ -14,6 +14,10 @@ exports.config = {
     'spec/*_spec.js'
   ],
 
+  // The below line of code is an example of the following ...
+  // ... Protractor's style guide rule advantage:
+  // Make your tests independent from each other.
+  // You can run suites in isolation.
   suites: {
     smoke: 'spec/smoke_test_spec.js'
   },
@@ -21,6 +25,11 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome',
     'chromeOptions': {'args': ['--disable-extensions']},
+
+    // The below 2 lines of code are an example of the following ...
+    // ... Protractor's style guide rule advantage:
+    // Make your tests independent from each other.
+    // You can run tests in parallel with sharding.
     shardTestFiles: true,
     maxInstances: 3
   },
