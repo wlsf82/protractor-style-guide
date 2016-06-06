@@ -15,4 +15,4 @@ To run the smoke test suite only, use the below command:
 `./node_modules/.bin/protractor protractor.conf.js --suite=smoke`
 
 The complete Protractor's style guide can be found here:
-http://angular.github.io/protractor/#/style-guide
+http://www.protractortest.org/#/style-guide
