@@ -1,7 +1,7 @@
 'use strict';
 
 // Require all the modules at the top.
-var ChokoPage = require('../pages/choko.page');
+var ChokoPage = require('../page-objects/choko.page');
 
 describe('Choko login', function() {
 

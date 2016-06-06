@@ -11,7 +11,7 @@ exports.config = {
 
   // Spec patterns are relative to the location of this config.
   specs: [
-    'spec/*_spec.js'
+    'specs/*_spec.js'
   ],
 
   // The below line of code is an example of the following ...
@@ -19,7 +19,7 @@ exports.config = {
   // Make your tests independent from each other.
   // You can run suites in isolation.
   suites: {
-    smoke: 'spec/smoke_test_spec.js'
+    smoke: 'specs/smoke_test_spec.js'
   },
 
   capabilities: {
@@ -36,7 +36,7 @@ exports.config = {
 
   // A base URL for your application under test. Calls to protractor.get()
   // with relative paths will be prepended with this.
-  baseUrl: 'http://angular.github.io/protractor/',
+  baseUrl: 'http://www.protractortest.org/#/',
 
   jasmineNodeOpts: {
     onComplete: null,

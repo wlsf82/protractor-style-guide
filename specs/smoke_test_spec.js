@@ -2,7 +2,7 @@
 
 // The below line of code is an example of the following Protractor's style guide rule:
 // Require all the modules at the top.
-var ProtractorMenuPage = require('../pages/protractor_menu.page');
+var ProtractorMenuPage = require('../page-objects/protractor_menu.page');
 
 // The below tests are an example of the following Protractor's style guide rule:
 // Have a suite that navigates through the major routes of the app
@@ -26,7 +26,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/tutorial';
+      var expectedUrl = '/#/tutorial';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -38,7 +38,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/protractor-setup';
+      var expectedUrl = '/#/protractor-setup';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -50,7 +50,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/server-setup';
+      var expectedUrl = '/#/server-setup';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -62,7 +62,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/browser-setup';
+      var expectedUrl = '/#/browser-setup';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -74,7 +74,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/frameworks';
+      var expectedUrl = '/#/frameworks';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -86,7 +86,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/getting-started';
+      var expectedUrl = '/#/getting-started';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -98,7 +98,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/tutorial';
+      var expectedUrl = '/#/tutorial';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -110,7 +110,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/api-overview';
+      var expectedUrl = '/#/api-overview';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -122,7 +122,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/system-setup';
+      var expectedUrl = '/#/system-setup';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -134,7 +134,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/locators';
+      var expectedUrl = '/#/locators';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -146,7 +146,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/page-objects';
+      var expectedUrl = '/#/page-objects';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -158,7 +158,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/debugging';
+      var expectedUrl = '/#/debugging';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -188,7 +188,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/api';
+      var expectedUrl = '/#/api';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -200,7 +200,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/style-guide';
+      var expectedUrl = '/#/style-guide';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -212,7 +212,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/webdriver-vs-protractor';
+      var expectedUrl = '/#/webdriver-vs-protractor';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -224,7 +224,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/browser-support';
+      var expectedUrl = '/#/browser-support';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -236,7 +236,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/plugins';
+      var expectedUrl = '/#/plugins';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -248,7 +248,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/timeouts';
+      var expectedUrl = '/#/timeouts';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -260,7 +260,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/control-flow';
+      var expectedUrl = '/#/control-flow';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -272,7 +272,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/infrastructure';
+      var expectedUrl = '/#/infrastructure';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -284,7 +284,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/jasmine-upgrade';
+      var expectedUrl = '/#/jasmine-upgrade';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -296,7 +296,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/mobile-setup';
+      var expectedUrl = '/#/mobile-setup';
       expect(url).toContain(expectedUrl);
     });
   });
@@ -308,7 +308,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = '/protractor/#/faq';
+      var expectedUrl = '/#/faq';
       expect(url).toContain(expectedUrl);
     });
   });

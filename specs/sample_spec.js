@@ -2,7 +2,7 @@
 
 // The below line of code is an example of the following Protractor's style guide rule:
 // Require all the modules at the top.
-var APIPage = require('../pages/api.page');
+var APIPage = require('../page-objects/api.page');
 
 describe('a test to examplify the Protractor\'s style guide', function() {
 
