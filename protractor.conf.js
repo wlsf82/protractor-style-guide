@@ -1,37 +1,25 @@
 var SpecReporter = require('jasmine-spec-reporter');
 
 exports.config = {
-  // Set directConnect to true to use Chrome's or Firefox's webdriver,
-  // instead of selenium server.
-  // When directConnect is true the seleniumAddress configuration is skipped.
-  directConnect: true,
 
   // The address of a running selenium server.
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  seleniumAddress: 'http://ondemand.saucelabs.com:80/wd/hub',
 
   // Spec patterns are relative to the location of this config.
   specs: [
-    'specs/*_spec.js'
+    'specs/smoke_test_spec.js'
   ],
-
-  // The below line of code is an example of the following ...
-  // ... Protractor's style guide rule advantage:
-  // Make your tests independent from each other.
-  // You can run suites in isolation.
-  suites: {
-    smoke: 'specs/smoke_test_spec.js'
-  },
 
   capabilities: {
     'browserName': 'chrome',
     'chromeOptions': {'args': ['--disable-extensions']},
 
-    // The below 2 lines of code are an example of the following ...
-    // ... Protractor's style guide rule advantage:
-    // Make your tests independent from each other.
-    // You can run tests in parallel with sharding.
-    shardTestFiles: true,
-    maxInstances: 3
+    // Saucelabs credentials
+    username: process.env.SAUCELABS_USERNAME,
+    accessKey: process.env.SAUCELABS_ACCESS_KEY,
+
+    // Test suite name.
+    'name': 'SemaphoreCI, SauceLabs and Protractor test suite'
   },
 
   // A base URL for your application under test. Calls to protractor.get()
