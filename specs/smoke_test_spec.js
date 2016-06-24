@@ -27,7 +27,7 @@ describe('Official Protractor page - smoke test suite', function() {
     // Assert:
     browser.getCurrentUrl().then(function(url) {
       var expectedUrl = '/#/tutorial';
-      expect(url).toContain(expectedUrl + 'foo');
+      expect(url).toContain(expectedUrl);
     });
   });
 
