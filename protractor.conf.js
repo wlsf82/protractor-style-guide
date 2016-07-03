@@ -19,7 +19,7 @@ exports.config = {
     accessKey: process.env.SAUCELABS_ACCESS_KEY,
 
     // Test suite name.
-    'name': 'SemaphoreCI, SauceLabs and Protractor test suite'
+    'name': 'SemaphoreCI, SauceLabs and Protractor test suite - DEVOPS Norway'
   },
 
   // A base URL for your application under test. Calls to protractor.get()
