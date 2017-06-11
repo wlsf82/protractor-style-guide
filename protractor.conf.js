@@ -1,4 +1,4 @@
-var SpecReporter = require('jasmine-spec-reporter');
+var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 
 exports.config = {
   // Set directConnect to true to use Chrome's or Firefox's webdriver,

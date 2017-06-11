@@ -151,7 +151,7 @@ describe('Official Protractor page - smoke test suite', function() {
     });
   });
 
-  it('navigate to debuggin protractor tests', function() {
+  it('navigate to debugging protractor tests', function() {
     // Act:
     protractorMenuPage.protractorTestsLink.click();
     protractorMenuPage.debuggingProtractorTestsLink.click();
@@ -173,7 +173,7 @@ describe('Official Protractor page - smoke test suite', function() {
 
     // Assert:
     browser.getCurrentUrl().then(function(url) {
-      var expectedUrl = 'https://github.com/angular/protractor/blob/master/docs/referenceConf.js';
+      var expectedUrl = 'https://github.com/angular/protractor/blob/master/lib/config.ts';
       expect(url).toEqual(expectedUrl);
     });
 
@@ -261,6 +261,30 @@ describe('Official Protractor page - smoke test suite', function() {
     // Assert:
     browser.getCurrentUrl().then(function(url) {
       var expectedUrl = '/#/control-flow';
+      expect(url).toContain(expectedUrl);
+    });
+  });
+
+  it('navigate to TypeScript', function() {
+    // Act:
+    protractorMenuPage.referenceLink.click();
+    protractorMenuPage.usingTypeScript.click();
+
+    // Assert:
+    browser.getCurrentUrl().then(function(url) {
+      var expectedUrl = '/#/typescript';
+      expect(url).toContain(expectedUrl);
+    });
+  });
+
+  it('navigate to Async/Await', function() {
+    // Act:
+    protractorMenuPage.referenceLink.click();
+    protractorMenuPage.usingAsyncAwait.click();
+
+    // Assert:
+    browser.getCurrentUrl().then(function(url) {
+      var expectedUrl = '/#/async-await';
       expect(url).toContain(expectedUrl);
     });
   });

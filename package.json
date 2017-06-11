@@ -2,7 +2,8 @@
   "name": "protractor-tests",
   "version": "0.0.1",
   "devDependencies": {
-    "protractor": "3.0.0"
+    "jasmine-spec-reporter": "^4.1.0",
+    "protractor": "5.1.2"
   },
   "scripts": {
     "install": "node ./node_modules/protractor/bin/webdriver-manager update"

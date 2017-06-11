@@ -28,9 +28,11 @@ var ProtractorMenuPage = function() {
   this.pluginsLink = element(by.css('.dropdown.open .dropdown-menu li:nth-child(6) a'));
   this.timeoutsLink = element(by.css('.dropdown.open .dropdown-menu li:nth-child(7) a'));
   this.theWebdriverControlFlowLink = element(by.css('.dropdown.open .dropdown-menu li:nth-child(8) a'));
-  this.howItWorksLink = element(by.css('.dropdown.open .dropdown-menu li:nth-child(9) a'));
-  this.upgradingToJasmine2Link = element(by.css('.dropdown.open .dropdown-menu li:nth-child(10) a'));
-  this.mobileSetupLink = element(by.css('.dropdown.open .dropdown-menu li:nth-child(11) a'));
+  this.usingTypeScript = element(by.css('.dropdown.open .dropdown-menu li:nth-child(9) a'));
+  this.usingAsyncAwait = element(by.css('.dropdown.open .dropdown-menu li:nth-child(10) a'));
+  this.howItWorksLink = element(by.css('.dropdown.open .dropdown-menu li:nth-child(11) a'));
+  this.upgradingToJasmine2Link = element(by.css('.dropdown.open .dropdown-menu li:nth-child(12) a'));
+  this.mobileSetupLink = element(by.css('.dropdown.open .dropdown-menu li:nth-child(13) a'));
   this.faqLink = element.all(by.css('.dropdown.open ul li a')).last();
 
 };
