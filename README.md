@@ -1,3 +1,5 @@
+⚠️ **This project has been deprecated.** ⚠️
+
 This project is an example of some items in the Protractor's style guide.
 
 To install the project, run the below command into the root's project directory:
